@@ -1,0 +1,47 @@
+.project__Container{
+    background-image: url(../../assets/Backgrounds/background__Projects.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: auto;
+    background-color: #252422;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.project__Title-Container{
+    width: 100%;
+    padding: 0 120px;
+}
+.project__Title{
+    color: #FFFCF2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: row;
+}
+.Title-Hr-Line{
+    position: relative;    
+}
+
+.Title-Hr-Line::after{
+    content: '';
+    flex: 1 1;
+    height: 0.1rem;
+    width: 65%;
+    max-width: 70%;
+    background: #EB5E28;
+    top: 50%;
+    margin: auto;  
+}
+
+.project__Cards-Container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}

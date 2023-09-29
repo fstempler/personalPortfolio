@@ -1,0 +1,74 @@
+.experience__Container{
+    background-image: url(../../assets/Backgrounds/background__Experience.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-color: #252422;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.experience__Title-Container{
+    width: 100%;
+    padding: 0 120px;
+}
+.experience__Title{
+    color: #FFFCF2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: row;
+}
+.Title-Hr-Line{
+    position: relative;    
+}
+
+.Title-Hr-Line::after{
+    content: '';
+    flex: 1 1;
+    height: 0.1rem;
+    width: 65%;
+    max-width: 70%;
+    background: #EB5E28;
+    top: 50%;
+    margin: auto;  
+}
+
+.experience__Card-Container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 50px;
+}
+.experience__Card{
+    margin-top: 30px;
+}
+.experience__Card-Info-List{
+    list-style: none;
+}
+.experience__Card-Title{
+    color: #CCC5B9;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.experience__Card-Subtitle{
+    color: #CCC5B9;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+.experience__Card-Info-Item-Title{    
+    font-weight: 600;
+    color: #CCC5B9;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+.experience__Card-Info-Item{
+    color: #CCC5B9;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}

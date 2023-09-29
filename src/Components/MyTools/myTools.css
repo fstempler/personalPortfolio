@@ -1,0 +1,30 @@
+.myTools__Title-Container{
+    width: 100%;
+    padding: 0 120px;
+}
+.myTools__Title{
+    color: #FFFCF2;    
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: row;
+}
+.myToolsTitle-Hr-Line{
+    position: relative;    
+}
+
+.myToolsTitle-Hr-Line::after{
+    content: '';
+    flex: 1 1;
+    height: 0.1rem;
+    width: 65%;
+    max-width: 70%;
+    background: #EB5E28;
+    top: 50%;
+    margin: auto;  
+}
+.myTools__Tools-Container{
+    margin: 50px 0;
+}
+.myTools__Tools{
+    color: #CCC5B9;    
+}

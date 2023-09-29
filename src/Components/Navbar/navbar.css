@@ -1,0 +1,31 @@
+.navbar__Container{
+    background-color: #252422;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;    
+}
+.navbar__Logo{
+    width: 50%;
+    height: auto;
+}
+
+.navbar__CVBtn{
+    color: #eb5e28;
+    font-size: 1.2rem;
+}
+.navbar__LangBtn{
+    color: #eb5e28;
+    font-size: 1.2rem;
+}
+
+.navbar__Links-List{
+    color: #ccc5b9;
+}
+.navbar__Link{
+    color: #ccc5b9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
