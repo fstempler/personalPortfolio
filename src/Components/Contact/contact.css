@@ -47,8 +47,10 @@
     border-width: 1px;
 }
 .form-control::placeholder{
-    color:#403D39;
+    color:#CCC5B9;
     font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 0.8;
 }
 .form-control:focus{
     background-color: #252422;
