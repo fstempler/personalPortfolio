@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser'
 import 'react-toastify/dist/ReactToastify.css';
 import './contact.css';
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 const Contact = () => {
@@ -107,10 +108,10 @@ const Contact = () => {
             </div>     
             <div className='contact__Rrss-Container'>
                 <div className='contact__Rrss contactRrss-Hr-Line'>
-                <i className="bi bi-linkedin icon"></i>
-                <i className="bi bi-github icon"></i>
-                <i className="bi bi-instagram icon"></i>
-                <i className="bi bi-envelope-at icon"></i>
+                <Link to='https://www.linkedin.com/in/federico-stempler/' target='_blank'><i className="bi bi-linkedin icon"></i></Link>
+                <Link to='https://github.com/fstempler' target='_blank'><i className="bi bi-github icon"></i></Link>
+                <Link to='https://www.instagram.com/fmstempler/'target='_blank'><i className="bi bi-instagram icon"></i></Link>
+                <Link to='mailTo:fmstempler@gmail.com'><i className="bi bi-envelope-at icon"></i></Link>
                 </div>
             </div>
             <div className='contact__Copyright-Container'>
