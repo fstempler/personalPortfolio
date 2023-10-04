@@ -29,7 +29,7 @@ const Navbar = () => {
                             <Link className="nav-link navbar__Link" aria-current="page" to='#Contact' smooth >CONTACT</Link>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link navbar__Link' aria-current='page' href='#'><i className="bi bi-file-person navbar__CVBtn"></i></a>
+                            <Link className='nav-link navbar__Link' aria-current='page' to='https://drive.google.com/file/d/1ISd-6ZxrK4GKYNduZlMLMooR9QoY4pzB/view?usp=drive_link'><i className="bi bi-file-person navbar__CVBtn"></i></Link>
                         </li>                        
                         {/* <li className='nav-item'>
                             <a className='nav-link navbar__Link' aria-current='page' href='#'><i className="bi bi-toggle-on navbar__LangBtn"></i></a>
