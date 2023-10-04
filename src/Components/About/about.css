@@ -1,5 +1,6 @@
 .about__Main-Container{
     margin-top: 100px;
+    padding-top: 80px;
 }
 
 .about__Title-Container{
@@ -43,9 +44,7 @@
     width: 50%;
     height: auto;    
 }
-.about__Text-Container{
-    /* padding-right: 160px; */
-}
+
 .about__Text{
     color: #CCC5B9;
 }

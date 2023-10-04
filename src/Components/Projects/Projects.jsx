@@ -11,7 +11,7 @@ import CardRight from './Components/Cards/CardRight';
 const Project = () => {
     return (
         <>
-        <div className='project__Container'>
+        <div className='project__Container' id='Projects'>
             <div className='project__Title-Container'>
                 <h1 className='project__Title Title-Hr-Line'>
                     Projects

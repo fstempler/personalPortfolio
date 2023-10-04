@@ -1,40 +1,108 @@
+import { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser'
+import 'react-toastify/dist/ReactToastify.css';
 import './contact.css';
 
+
 const Contact = () => {
+    
+    const [formData, setFormData] = useState({
+        Name: '',
+        Email: '',
+        Message: ''
+      });
+      
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+          ...prevData,
+          [name]: value
+        }));
+      };
+      
+      const handleSubmit = (e) => {
+        e.preventDefault();
+      
+        // Validación de datos por si no funcionara Bootstrap
+        if (formData.Name === '' || formData.Email === '' || formData.Message === '') {
+          toast.error('Please fill out all fields');
+        
+          return;
+        }
+      
+        // Lógica para enviar el formulario (puedes usar aquí tu lógica de enviar datos a un servidor o enviar un correo electrónico)
+        emailjs.sendForm('service_cugd3lr', 'template_n7mkcbn', e.target, 'sZsJy-M6uveQyxuIa')
+        // Limpiar el formulario después del envío
+        
+
+        setFormData({
+          Name: '',
+          Email: '',
+          Message: '',
+        });
+
+        // Mensaje de éxito
+        toast.success('Thank you!', {
+          position: 'top-center',
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'light'
+        });        
+        
+      };       
+      
+
     return (
         <>
-        <div className='contact__Main-Container'>
+        <div className='contact__Main-Container' id='Contact'>
             <div className='contact__Title-Container'>
                 <h1 className='contact__Title contactTitle-Hr-Line'>
                     Contact
                 </h1>
             </div>
             <div className='contact__Form-Container container'>
-            <form className='contact__Form'>
+            <form className='contact__Form' onSubmit={handleSubmit}>
                 <div className="mb-3">                    
                     <input 
-                    type="email" 
+                    type="text" 
                     className="form-control" 
                     id="exampleInputEmail1" 
-                    aria-describedby="emailHelp" 
-                    placeholder='Name'/>                    
+                    aria-describedby="Name" 
+                    placeholder='Name'
+                    name='Name'
+                    value={formData.Name}
+                    onChange={handleChange}
+                    required/>                    
                 </div>  
                 <div className="mb-3">                    
                     <input 
                     type="email" 
                     className="form-control" 
                     id="exampleInputEmail1" 
-                    aria-describedby="emailHelp" 
-                    placeholder='Email'/>                    
+                    aria-describedby="email" 
+                    placeholder='Email'
+                    name='Email'
+                    value={formData.Email}
+                    onChange={handleChange}
+                    required/>                    
                 </div> 
                 <div className="mb-3">                    
                     <textarea 
                     className="form-control" 
                     id="exampleFormControlTextarea1" 
                     rows="3"
-                    placeholder='Message'></textarea>
+                    placeholder='Message'
+                    name='Message'
+                    value={formData.Message}
+                    onChange={handleChange}
+                    required></textarea>
                 </div>
-                <button type="submit" className="btn contact__Form-Btn">Send Message</button>
+                <button type="submit" className=" contact__Form-Btn">Send Message</button>
             </form>
             </div>     
             <div className='contact__Rrss-Container'>

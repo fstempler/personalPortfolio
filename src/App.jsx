@@ -7,12 +7,16 @@ import Project from './Components/Projects/Projects';
 import About from './Components/About/About';
 import MyTools from './Components/MyTools/MyTools';
 import Contact from './Components/Contact/Contact';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   
 
   return (
     <>
+    <BrowserRouter>
       <Navbar />
       <Header />
       <Experience />
@@ -20,6 +24,8 @@ function App() {
       <About />
       <MyTools />
       <Contact />
+      <ToastContainer />
+    </BrowserRouter>
     </>
   )
 }
