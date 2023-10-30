@@ -22,8 +22,14 @@
     top: 50%;
     margin: auto;  
 }
-.myTools__Tools-Container{
-    margin: 50px 0;
+.myTools__Tools-Container{    
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;    
+    margin-top: 50px;
+    padding: 50px;
 }
 .myTools__Tools{
     color: #CCC5B9;    

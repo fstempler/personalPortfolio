@@ -1,0 +1,25 @@
+.card{
+    max-height: 20rem;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 0;
+    background-color: #403D39;
+    transition: ease-in;    
+}
+.card:hover{
+    border-color: #EB5E28;
+    background-color: #403D3900;
+}
+.skillCard__Img{
+    width: 15%;
+    height: auto;
+    margin: 5px;
+}
+.card-title{
+    color: #CCC5B9;
+    font-size: 0.8rem;
+}
+.card-text{
+    color: #CCC5B9;
+    font-size: 0.6rem;    
+}
