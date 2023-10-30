@@ -2,10 +2,13 @@
     background-color: #252422;
     position: sticky;
     top: 0;    
-    z-index: 1000;    
+    z-index: 1000;        
+}
+.navbar-brand{
+    width: 80%;
 }
 .navbar__Logo{
-    width: 8%;
+    width: 5%;
     height: auto;
 }
 
@@ -27,4 +30,10 @@
     font-size: 0.7rem;
     font-weight: 500;
     letter-spacing: 3px;
+}
+
+@media ( max-width: 460px ) {
+    .navbar__Logo{
+        width: 15%;
+    }
 }
