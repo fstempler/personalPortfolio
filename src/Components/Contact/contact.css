@@ -1,4 +1,8 @@
 .contact__Main-Container{
+    background-image: url(../../assets/Backgrounds/background__Contact.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -81,7 +85,7 @@
 .contact__Rrss-Container{
     width: 100%;
     padding: 0 120px;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 .contact__Rrss{        
     display: flex;
