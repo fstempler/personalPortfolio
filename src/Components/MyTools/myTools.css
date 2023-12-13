@@ -1,6 +1,9 @@
+.myTools__Container{
+    height: auto;
+}
 .myTools__Title-Container{
     width: 100%;
-    padding: 0 120px;
+    padding: 0 90px;
 }
 .myTools__Title{
     color: #FFFCF2;    

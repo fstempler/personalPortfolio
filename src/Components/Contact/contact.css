@@ -12,7 +12,8 @@
 }
 .contact__Title-Container{
     width: 100%;
-    padding: 0 120px;
+    height: 100%;
+    padding: 0 90px;
 }
 .contact__Title{
     color: #FFFCF2;
@@ -39,8 +40,8 @@
 .contact__Form-Container{
     margin: 0 110px;
     display: flex;    
-    align-items: center;
-    margin-top: 200px;
+    align-items: center;    
+    height: 100%;
 }
 .contact__Form{
     width: 50%;
@@ -84,14 +85,18 @@
 
 .contact__Rrss-Container{
     width: 100%;
-    padding: 0 120px;
-    margin-top: 300px;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;    
+    align-content: flex-end;
+    justify-content: center;
+   
 }
 .contact__Rrss{        
     display: flex;
     flex-direction: row;
 } 
-.contactRrss-Hr-Line{
+/* .contactRrss-Hr-Line{
     position: relative;
 }
 .contactRrss-Hr-Line::after{
@@ -103,12 +108,19 @@
     background: #EB5E28;
     top: 50%;
     margin: auto;  
-}
+} */
 .icon{
     color: #FFFCF2;
     margin: 20px;
 }
 
+.contact__Copyright-Container{
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;    
+    align-content: flex-end;
+    justify-content: center;
+}
 .contact__Copyright{
     color: #FFFCF2;
     text-align: center;
@@ -118,6 +130,6 @@
 
 @media (max-width: 556px){
     .contact__Form-Container{        
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }    
 }

@@ -25,12 +25,35 @@
     color: #ccc5b9;
 }
 .navbar__Link{
+    display: inline-block;
+    position: relative;
     color: #ccc5b9;
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 3px;    
 }
+
+.navbar__Link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #eb5e28;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+.navbar__Link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }  
+
+
+
 
 @media ( max-width: 460px ) {
     .navbar__Logo{

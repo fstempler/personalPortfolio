@@ -9,7 +9,55 @@ const Experience = () => {
                     Experience
                 </h1>
 
-                <div className='row experience__Card-Container'>
+                    <div className='row experience__Card-Container'>
+                        <div className='row experience__Card'>
+                            <div className='col-md-6'>
+                                <div className='experience__Card-Title-Container'>
+                                    <h5 className='experience__Card-Title'>
+                                        Taktical Digital
+                                    </h5>
+                                </div>
+                            <div className='experience__Card-Subtitle-Container'>
+                                <p className="experience__Card-Subtitle">
+                                    Nov 2023 - Ongoing 
+                                </p>                            
+                            </div>
+                        </div>
+                        <div className='col-md-6'>
+                            <div className='experience__Card-Info-Container'>
+                                <ul className='experience__Card-Info-List'>
+                                    <li className='experience__Card-Info-Item-Title'>Front End Development.</li>
+                                    <li className='experience__Card-Info-Item'>&gt; Web development.</li>
+                                    <li className='experience__Card-Info-Item'>&gt; UI development.</li>                                    
+                                </ul>
+                            </div>                        
+                        </div>
+                    </div>
+
+                    <div className='row experience__Card'>
+                        <div className='col-md-6'>
+                            <div className='experience__Card-Title-Container'>
+                                <h5 className='experience__Card-Title'>
+                                    Freelance Front End Developer
+                                </h5>
+                            </div>
+                            <div className='experience__Card-Subtitle-Container'>
+                                <p className="experience__Card-Subtitle">
+                                    Dic 2022 - Ongoing
+                                </p>                            
+                            </div>
+                        </div>
+                        <div className='col-md-6'>
+                            <div className='experience__Card-Info-Container'>
+                                <ul className='experience__Card-Info-List'>
+                                    <li className='experience__Card-Info-Item'>&gt; Web development.</li>
+                                    <li className='experience__Card-Info-Item'>&gt; Front End development.</li>
+                                    <li className='experience__Card-Info-Item'>&gt; Apps development.</li>
+                                </ul>
+                            </div>                        
+                        </div>
+                    </div>
+
                     <div className='row experience__Card'>
                         <div className='col-md-6'>
                             <div className='experience__Card-Title-Container'>
