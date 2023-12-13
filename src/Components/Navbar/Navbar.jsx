@@ -6,7 +6,7 @@ const Navbar = () => {
 
     return (
     <>
-        <nav className="navbar navbar-expand-lg bg-body-transparent navbar-dark navbar-fixed-top navbar__Container">
+        <nav className="navbar navbar-expand-lg bg-body-transparent navbar-dark fixed-top navbar__Container">
             <div className="container-fluid ">
                 <Link className="navbar-brand" to="#Header">
                     <img className='navbar__Logo' src={logo} alt='Logo'/>    
@@ -34,8 +34,10 @@ const Navbar = () => {
                     </ul>
       
                 </div>
-            </div>  
+            </div>
+            <div className='progress'></div>  
         </nav>
+        
 
     </>
 

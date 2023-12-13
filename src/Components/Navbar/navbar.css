@@ -1,6 +1,6 @@
 .navbar__Container{
     background-color: #252422;
-    position: sticky;
+    position: fixed;
     top: 0;    
     z-index: 1000;        
 }
@@ -52,7 +52,26 @@
     transform-origin: bottom left;
   }  
 
-
+  .progress {
+    height: 0.1rem;
+    background: #eb5e28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: 0 50%;
+    animation: scaleProgress auto linear;
+    animation-timeline: scroll(root);
+  }
+  
+  @keyframes scaleProgress {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
 
 
 @media ( max-width: 460px ) {
