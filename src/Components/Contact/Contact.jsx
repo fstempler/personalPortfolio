@@ -105,13 +105,17 @@ const Contact = () => {
                 </div>
                 <button type="submit" className=" contact__Form-Btn">Send Message</button>
             </form>
-            </div>     
+            </div>
+               
             <div className='contact__Rrss-Container'>
+                <div className='contact__TopBtn'>
+                  <a href='#' className='contact__Top-Btn'>Back to Top <span className='arrowIcon'><i className="bi bi-arrow-90deg-up"></i></span></a>
+                </div>  
                 <div className='contact__Rrss contactRrss-Hr-Line'>
-                <Link to='https://www.linkedin.com/in/federico-stempler/' target='_blank'><i className="bi bi-linkedin icon"></i></Link>
-                <Link to='https://github.com/fstempler' target='_blank'><i className="bi bi-github icon"></i></Link>
-                <Link to='https://www.instagram.com/fmstempler/'target='_blank'><i className="bi bi-instagram icon"></i></Link>
-                <Link to='mailTo:fmstempler@gmail.com'><i className="bi bi-envelope-at icon"></i></Link>
+                  <Link to='https://www.linkedin.com/in/federico-stempler/' target='_blank'><i className="bi bi-linkedin icon"></i></Link>
+                  <Link to='https://github.com/fstempler' target='_blank'><i className="bi bi-github icon"></i></Link>
+                  <Link to='https://www.instagram.com/fmstempler/'target='_blank'><i className="bi bi-instagram icon"></i></Link>
+                  <Link to='mailTo:fmstempler@gmail.com'><i className="bi bi-envelope-at icon"></i></Link>
                 </div>
             </div>
             <div className='contact__Copyright-Container'>

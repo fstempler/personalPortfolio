@@ -5,6 +5,7 @@ import silmar from '../../assets/Cards/cards_silmar.jpg';
 import memoryTest from '../../assets/Cards/cards__MemoryTest.jpg';
 import spincity from '../../assets/Cards/cards__spincity.jpg';
 import gumat from '../../assets/Cards/cards__Gumat.jpg';
+import taktical from '../../assets/Cards/cards__Taktical.png';
 
 import CardRight from './Components/Cards/CardRight';
 
@@ -19,6 +20,13 @@ const Project = () => {
                 </h1>
             </div>
             <div className='project__Cards-Container'>
+
+                <CardRight 
+                backgroundImage={taktical}
+                title='TAKTICAL'
+                text='A Home Page the top marketing agency in NYC'
+                tools='WORDPRESS | ELEMENTOR | HTML | CSS '
+                linkContent={'https://taktical.co/'}/>
                 
                 <CardRight 
                 backgroundImage={gumat}
